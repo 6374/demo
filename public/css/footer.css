@@ -1,0 +1,159 @@
+footer {
+  background-color: #fff;
+  box-shadow: 0px -5px 10px 0px rgba(19, 19, 19, 0.05);
+}
+footer h4 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #333;
+  font-weight: bold;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 80px;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  width: 185px;
+}
+footer ul li a {
+  color: #333;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 20px;
+}
+footer ul li a:first-of-type {
+  margin-top: 25px;
+}
+footer .right-box > div {
+  display: flex;
+}
+footer .right-box > div .code-box {
+  margin-top: 20px;
+}
+footer .right-box > div .code-box .text {
+  text-align: center;
+  margin-top: 10px;
+}
+footer .right-box > div .code-box .text img {
+  margin-right: 10px;
+  width: 20px;
+}
+footer .foot {
+  width: 100%;
+  background-color: #282828;
+  height: 40px;
+}
+footer .foot .left {
+  display: flex;
+  align-items: center;
+}
+footer .container:last-child {
+  align-items: center;
+  padding: 0;
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+}
+footer .container:last-child .left a {
+  color: #fff;
+  margin-right: 15px;
+}
+footer .container:last-child .right {
+  display: flex;
+  justify-content: center;
+}
+footer .container:last-child .right a {
+  color: #fff;
+  padding: 0 10px;
+}
+footer .container:last-child .right a:first-child {
+  border-right: 1px solid #fff;
+}
+footer .container:last-child .item {
+  display: flex;
+  align-items: center;
+}
+footer .container:last-child .item img {
+  margin-right: 6px;
+}
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 92%;
+  }
+  footer ul li {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 1044px) {
+  .container {
+    width: 94%;
+  }
+  footer .container {
+    display: block;
+  }
+  footer .right-box {
+    text-align: center;
+  }
+  footer .right-box div {
+    justify-content: center;
+  }
+  footer .right-box div .code-box {
+    width: 2.4rem;
+  }
+  footer .right-box div .code-box > img {
+    width: 100%;
+  }
+  footer ul {
+    display: block;
+  }
+  footer ul li {
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+  footer ul li div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  footer ul li div a {
+    width: 50%;
+    margin-bottom: 0.4rem;
+    margin-top: 0 !important;
+  }
+  .foot {
+    height: auto !important;
+    padding: 0.5rem 0;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .left a {
+    text-align: center;
+    width: 100%;
+    line-height: 32px;
+  }
+  .left .item {
+    justify-content: center;
+  }
+  .right {
+    margin-top: 0.4rem;
+  }
+}

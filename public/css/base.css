@@ -1,0 +1,96 @@
+/*base.css*/
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	color: #333;
+	font-family: "微软雅黑",arial,sans-serif;
+}
+/*清除超链接下划线*/
+a{
+	text-decoration: none;
+}
+/*清除列表项目符号*/
+ul,ol{
+	list-style: none;
+}
+
+/*IE9 兼容HTML5 新标签*/
+header,footer,main,nav,section,article,aside{
+	display: block;
+}
+
+/*多行文本框*/
+textarea{
+	/*防止修改文本域的大小*/
+	resize:none;
+}
+input,select,textarea{
+	/*去掉 浏览器默认的轮廓*/
+	outline: none;
+	/*outline:0;  */
+}
+
+
+
+/*清除浮动  */
+.clearfix:after{
+	content:'';
+	display: block;
+	clear:both;
+}
+
+/*单行溢出省略*/
+.ellipsis{	
+	white-space:nowrap; /* 1.强制一行内显示文本 */	
+	overflow:hidden; /* 2.溢出部分隐藏 */
+	text-overflow:ellipsis; /* 3.溢出的文字用省略号代替 */
+}
+
+/*多行溢出省略*/
+.lines-ellipsis{
+	display:-webkit-box; /* 弹性伸缩盒子模型显示 */
+	display: box;
+	-webkit-line-clamp:2; /* 限制在一个块元素显示的文本的行数 */
+	-webkit-box-orient:vertical;/* 设置伸缩盒子对象的子元素的排列方式 */
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+/*自定义宽度*/
+.w100{
+	width:100%;
+}
+.w1200{
+	width: 1200px;
+}
+
+/*浮动*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+/*相对定位*/
+.pr{
+	position: relative;
+}
+
+/*自定义边距*/
+.p20{
+	padding:20px;
+}
+.pt20{  /*pb20 pl20 pr20 */
+	padding-top:20px;
+}
+
+/*自定义字体*/
+.f14{
+	font-size: 14px;
+}
+.f16{
+	font-size: 16px;
+}
