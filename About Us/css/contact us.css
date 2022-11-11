@@ -1,0 +1,307 @@
+body {
+  background-color: #f1f2f3;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+.header-container {
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 111;
+  top: 0;
+  left: 0;
+}
+.inner-banner {
+  background: url(../img/img\ \(28\).png) no-repeat center / cover;
+  height: 500px;
+}
+.inner-banner .container {
+  padding-top: 200px;
+  color: #fff;
+}
+.inner-banner .container h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.inner-banner .container p {
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+.second-box {
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+}
+.second-box .container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.second-box a {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  height: 100%;
+  margin-right: 20px;
+  display: inline-block;
+}
+.second-box a::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  clear: both;
+  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: #0068b6;
+}
+.second-box a:nth-child(5) {
+  color: #0068b6;
+}
+.second-box a:nth-child(5)::before {
+  display: block;
+}
+.second-box a:hover {
+  color: #0068b6;
+}
+.second-box a:hover::before {
+  display: block;
+}
+.about-container .container {
+  background-color: #fff;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+}
+.tops {
+  display: flex;
+  padding: 50px 30px 50px 0;
+  border-bottom: 1px solid #f1f2f3;
+}
+.tops .left {
+  width: 57%;
+  display: flex;
+  align-items: center;
+}
+.tops .left .txt-box {
+  padding: 0 70px;
+  text-align: center;
+}
+.tops .left .txt-box i {
+  font-size: 58px;
+  color: #0068b6;
+}
+.tops .left .txt-box p {
+  color: #0068b6;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.tops .left .info-box {
+  padding: 15px 30px;
+  border-left: 1px solid #f1f2f3;
+}
+.tops .left .info-box .tt {
+  font-weight: bold;
+}
+.tops .left .info-box .desc {
+  margin-top: 20px;
+}
+.tops .left .info-box .desc p {
+  color: #333;
+  font-size: 16px;
+  line-height: 28px;
+}
+.tops .right {
+  width: 43%;
+  padding: 0 40px;
+  border-left: 1px solid #f1f2f3;
+  box-sizing: border-box;
+}
+.tops .right .tit {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.tops .right .title-box {
+  margin: 20px 0;
+  width: 300px;
+}
+.tops .right .top {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #0068b6;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+}
+.tops .right .top .t-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.tops .right .top .t-top i {
+  transition: all 0.5s;
+}
+.tops .right .top .part-select {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 10px 20px;
+  background-color: #eee;
+  z-index: 10;
+  box-sizing: border-box;
+}
+.tops .right .top .part-select .item {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+  cursor: pointer;
+}
+.tops .right .top .part-select .item:hover {
+  color: #0068b6;
+}
+.address-items {
+  margin-top: 20px;
+  display: flex;
+}
+.address-items .item {
+  border-right: 1px solid #f1f2f3;
+  cursor: pointer;
+  text-align: center;
+  width: 20%;
+  padding: 0 3%;
+}
+.address-items .item i {
+  font-size: 32px;
+}
+.address-items .item .t1 {
+  font-size: 16px;
+  color: #999;
+  margin: 20px 0;
+}
+.address-items .item .desc {
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 1px;
+}
+.map-box {
+  padding: 40px;
+}
+.map-box #container {
+  height: 480px;
+}
+.map-box .BMapLabel {
+  border: none !important;
+}
+.map-box .map-info {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.map-box .map-info > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0068b6;
+  width: 90px;
+  height: 100%;
+}
+.map-box .map-info > a i {
+  font-size: 26px;
+  color: #fff;
+}
+.map-box .map-info > a p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+}
+.map-box .map-info .info {
+  width: 460px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.map-box .map-info .info p {
+  font-size: 14px;
+  color: #666;
+}
+.map-box .map-info .info .t2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1600px) {
+  .second-box a {
+    margin-right: 65px;
+  }
+}
+@media screen and (max-width: 1044px) {
+  .tops {
+    flex-direction: column;
+    padding: 0.2rem 0;
+  }
+  .tops .left {
+    width: 100%;
+  }
+  .tops .left .txt-box {
+    width: 24%;
+    padding: 0;
+  }
+  .tops .left .txt-box i {
+    font-size: 36px;
+  }
+  .tops .left .txt-box .txt {
+    font-size: 12px;
+  }
+  .tops .left .info-box .desc {
+    margin-top: 0.2rem;
+  }
+  .tops .left .info-box .desc p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .tops .right {
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0 0.2rem;
+  }
+  .tops .right .title-box {
+    width: 90%;
+  }
+  .tops .right .desc {
+    font-size: 14px;
+  }
+  .address-items {
+    flex-wrap: wrap;
+  }
+  .address-items .item {
+    width: 50%;
+    padding: 0.1%;
+    margin-bottom: 0.4rem;
+    box-sizing: border-box;
+  }
+  .address-items .item:nth-child(2n),
+  .address-items .item:nth-child(5) {
+    border: none !important;
+  }
+  .address-items .item i {
+    font-size: 24px;
+  }
+  .address-items .item .t1 {
+    margin: 10px 0;
+  }
+  .address-items .item p {
+    font-size: 14px !important;
+  }
+}
